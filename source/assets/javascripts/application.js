@@ -3,6 +3,12 @@ import classie from 'desandro-classie';
 
 require('jquery-ui');
 require('modernizr');
+require('wow');
+
+$(document).ready(() => {
+  new WOW().init();
+  const wow = new WOW({});
+});
 
 function sizeOnScroll() {
   window.addEventListener('scroll', function(e){

@@ -1,6 +1,16 @@
-.pointer
-  +padding(1)
+a.pointer
+  text-decoration: none
   text-align: center
+
+  &:hover
+    .pointer__pointer
+      opacity: .7
+
+    .pointer__body__inner
+      opacity: .7
+
+.pointer__body
+  +padding(1)
 
   &.is-first
     +at-breakpoint(desk)
@@ -29,6 +39,7 @@
   background-color: $white
   +padding(1)
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50)
+  transition: all 0.2s ease-in-out
 
 .pointer__heading
   color: $blue
@@ -52,6 +63,9 @@
 
 .pointer__pointer
   +margin-top(2)
+  transition: all 0.2s ease-in-out
+  margin: 0 auto
+  text-align: center
 
   img
     width: 100px

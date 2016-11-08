@@ -1,0 +1,7 @@
+.article.dialog class="#{article.id}" id="#{article.id}"
+  .article__frame
+    a href="#" data-class-toggle="is-active" data-element=".#{article.id}" class="dialog__close" chiudi
+    .formatted-content
+      h2 = article.title
+      = entity(article.content)
+      a.space--top-2.button href="#" data-class-toggle="is-active" data-element=".#{article.id}" class="dialog__close" chiudi

@@ -1,0 +1,57 @@
+.pointer
+  +padding(1)
+  text-align: center
+
+  &.is-first
+    +at-breakpoint(desk)
+      +margin-top(5)
+
+  &.is-second
+    +margin-top(2)
+    +at-breakpoint(desk)
+      +margin-top(7)
+    +at-breakpoint(wall)
+      +margin-top(35)
+
+  &.is-third
+    +margin-top(1)
+    +at-breakpoint(desk)
+      +margin-top(10)
+
+  &.is-fourth
+    +margin-top(6)
+    +at-breakpoint(desk)
+      +margin-top(6)
+    +at-breakpoint(wall)
+      +margin-top(55)
+
+.pointer__body__inner
+  background-color: $white
+  +padding(1)
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50)
+
+.pointer__heading
+  color: $blue
+  +heading-font-family
+  +font-size(gamma)
+  text-transform: uppercase
+
+  +at-breakpoint(lap)
+    +font-size(beta)
+
+.pointer__border
+  border-bottom: 1px solid $blue
+  width: 60%
+  margin: 0 auto
+  +margin-bottom(1)
+
+.pointer__text
+  +body-font-family
+  +font-size(delta)
+  line-height: 1.2
+
+.pointer__pointer
+  +margin-top(2)
+
+  img
+    width: 100px

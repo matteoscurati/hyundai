@@ -1,7 +1,6 @@
 .article
 
 .article__frame
-  +padding(1.5)
   position: fixed
   transform: translate(-50%, -50%)
   top: 50%
@@ -14,3 +13,20 @@
   -webkit-overflow-scrolling: touch
   background-color: white
   overflow-y: auto
+
+.article__text
+  +padding(1.5)
+
+.article__close
+  +padding(0.5)
+
+.article__image
+  background-repeat: no-repeat
+  background-position: center center
+  background-color: $light-bg-color
+  background-size: cover
+  position: relative
+  +vertical-padding(10)
+
+.article__credit
+  +font-size(smallprint)

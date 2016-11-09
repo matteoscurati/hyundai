@@ -3,11 +3,8 @@ a.pointer
   text-align: center
 
   &:hover
-    .pointer__pointer
-      opacity: .7
-
-    .pointer__body__inner
-      opacity: .7
+    .pointer__heading
+      color: $light-blue
 
 .pointer__body
   +padding(1)
@@ -41,13 +38,13 @@ a.pointer
   background-color: $white
   +padding(1)
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50)
-  transition: all 0.2s ease-in-out
 
 .pointer__heading
   color: $blue
   +heading-font-family
   +font-size(gamma)
   text-transform: uppercase
+  transition: all 0.2s ease-in-out
 
   +at-breakpoint(lap)
     +font-size(beta)

@@ -14,26 +14,28 @@ a.pointer
 
   &.is-first
     +at-breakpoint(desk)
-      +margin-top(5)
+      +margin-top(0)
 
   &.is-second
     +margin-top(2)
     +at-breakpoint(desk)
-      +margin-top(7)
+      +margin-top(1)
     +at-breakpoint(wall)
-      +margin-top(35)
+      +margin-top(15)
 
   &.is-third
     +margin-top(1)
     +at-breakpoint(desk)
+      +margin-top(2)
+    +at-breakpoint(wall)
       +margin-top(10)
 
   &.is-fourth
     +margin-top(6)
     +at-breakpoint(desk)
-      +margin-top(6)
+      +margin-top(0)
     +at-breakpoint(wall)
-      +margin-top(55)
+      +margin-top(25)
 
 .pointer__body__inner
   background-color: $white

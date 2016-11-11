@@ -1,7 +1,7 @@
 .article.dialog class="#{article.id}" id="#{article.id}"
   .article__frame
     .article__close
-    a href="#" data-class-toggle="is-active" data-element=".#{article.id}" class="dialog__close" chiudi
+    .dialog__close class="#{article.id}__close" href="#" chiudi
     .article__image style="background: url('/dist/images/#{article.image}') no-repeat center center; background-size: cover"
     .article__credit
       p
@@ -11,4 +11,5 @@
       .formatted-content
         h2 = article.title
         = entity(article.content)
-        a.space--top-2.button href="#" data-class-toggle="is-active" data-element=".#{article.id}" class="dialog__close" chiudi
+        .space--top-2.button class="#{article.id}__close" chiudi
+

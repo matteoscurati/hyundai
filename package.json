@@ -57,6 +57,7 @@
     "desandro-classie": "^1.0.1",
     "jquery": "^3.1.1",
     "jquery-ui": "^1.12.1",
+    "plyr": "^2.0.10",
     "wow.js": "^1.2.2"
   }
 }

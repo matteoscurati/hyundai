@@ -1,39 +1,19 @@
 .logo
   margin-top: 50px
-  background-color: $white
+  background-color: $black
   text-align: center
   +position(fixed)
   top: 0
   left: 0
   width: 100%
-  border-bottom: 1px solid $blue
   z-index: 5
   transition: all .2 ease-in-out
 
   img
-    height: 55px
+    +vertical-margin(1)
+    height: 130px
     transition: height .3s
-    padding-top: 5px
-    padding-bottom: 5px
 
   &.is-smaller
     img
-      height: 44px
-
-.logo--news
-  @extend .logo
-
-  img
-    max-width: 90%
-
-  &.is-smaller
-    img
-      max-width: 75%
-
-  +at-breakpoint(lap)
-    img
-      max-width: 100%
-
-    &.is-smaller
-      img
-        max-width: 90%
+      height: 40px
